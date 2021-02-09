@@ -10,6 +10,8 @@ dockerpath="myapp"
 
 # Step 2:  
 # Authenticate & tag
+docker logout
+docker login -u amitshr90
 echo "Docker ID and Image: $dockerpath"
 docker tag myapp  amitshr90/myapp:1.0
 # Step 3:
